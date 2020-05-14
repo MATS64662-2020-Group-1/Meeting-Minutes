@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[margin=2cm, bindingoffset=1cm, inner=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{float}
+
+\title{\bf Meeting Minutes 07/04/2020}
+\author{Group 1}
+
+\begin{document}
+\maketitle
+
+
+\section{RSEP Tutorial 1}
+
+
+- Project is about using open source FE packages, image analysis packages, to run any sort of physics simulation e.g. diffusion, thermal mechanics). Whatever we like. Deliberately vague. \newline\newline 
+- FE packages have some examples, can recreate what they do\newline\newline
+- Additionally to the FE examples, import images that are relevant to our PhD projects.\newline\newline
+- Split the entire project into several tasks\newline\newline
+- First task: taking an image, cleaning it up, segmentation, whatever preprocessing step you can think of. Task is built around converting an image into something that you can import into an FE simulation. Image analysis of a bunch of images + generate a mesh for the FE simulation\newline\newline
+- Second task: taking the cleaned up image and assigning different material IDs/boundary conditions to different regions, can see why the segmentation is important so material IDs can be assigned. Figuring out how to use some python FE software, can be any package, it is just about being able to use the package for our particular problem\newline\newline
+- FE physics simulation e.g. deformation/heat flow in a composite material\newline\newline
+- Take an FE package and create some examples, run FE simulation on example microstructures\newline\newline
+- Create test cases, a simple case where you know the solution e.g. 1D heat conduction, a source on one end. Open up a FE textbook and create an FE simulation for these test cases\newline\newline
+- Compare tests to textbook answer, if solution is completely different, then something has gone wrong in the simulation\newline\newline
+- Link sent to us for FE packages: skimage, scipy, Google search FE packages in python\newline\newline
+- Grading is based upon how the project is managed and how we are collaborating on Git, how issues are raised, how we communicate\newline\newline
+- Quality of technical job is not critical\newline\newline
+- Different repositories for different tasks, each should have a test case folder ( a suite of test cases should be included to ensure the code is running as expected) adding a level of trust\newline\newline
+- Developing examples for your particular task\newline\newline
+- Test case should be quick, easy to run and the solution should be obvious. Should have example files showcasing for the project\newline\newline
+- Document the code and the examples correctly. Document everything you do in the code e.g. comment lines \newline\newline
+- Do not create a Word report, do it on a Git repository (text file, which you can markup and see differences). Commits should show that the whole file has not just been committed. Need to add section by section.\newline\newline
+- Do not upload a word file as it will be seen in Git as a binary file and not a gradual/step-by-step process.\newline\newline
+- Perfect = Use Latex, easier to manage on Git and to grade\newline\newline
+- No page limit\newline\newline
+- Graded on Git log\newline\newline
+- When committing make sure the message is descriptive and try not to mix to many commits together. Commit needs to be atomic i.e. if a commit needs to be reverted and only one functionality causes an error/broken, then the whole commit will need to be reverted regardless of whether the other functionalities within the commit cause an error or not.\newline\newline
+- Each functionalities will then be added separately, not a nice way of doing things.\newline\newline
+- Feature = set of commits that make up a functionality\newline\newline
+- Make sure features are created in separate branches and merge features back into into a main branch\newline\newline
+- When merging, need to raise a pull request and someone else needs to approve of the pull request\newline\newline
+- Need someone to approve of changes, otherwise changes would be biased. Always good to have someone else review the changes created and approve the merge.\newline\newline
+- Links for good practice in using Git will be provided\newline\newline
+
+
+
+\end{document}
